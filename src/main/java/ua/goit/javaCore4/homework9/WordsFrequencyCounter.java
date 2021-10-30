@@ -33,23 +33,18 @@ public class WordsFrequencyCounter {
 
     private static void wordsCounter (List<String> words) {
         Map<String, Integer> elementCountMap = new LinkedHashMap<>();
-        for (int i = 0; i < words.size(); i++)
-        {
-            if (elementCountMap.containsKey(words.get(i)))
-            {
+        for (int i = 0; i < words.size(); i++) {
+            if (elementCountMap.containsKey(words.get(i))) {
                 elementCountMap.put(words.get(i), elementCountMap.get(words.get(i))+1);
             }
-            else
-            {
+            else {
                 elementCountMap.put(words.get(i), 1);
             }
         }
         ArrayList<Entry<String, Integer>> listOfEntry = new ArrayList<>(elementCountMap.entrySet());
-        Collections.sort(listOfEntry, new Comparator<Entry<String, Integer>>()
-                {
+        Collections.sort(listOfEntry, new Comparator<Entry<String, Integer>>() {
                     @Override
-                    public int compare(Entry<String, Integer> o1, Entry<String, Integer> o2)
-                    {
+                    public int compare(Entry<String, Integer> o1, Entry<String, Integer> o2) {
                         return o2.getValue().compareTo(o1.getValue());
                     }
                 }

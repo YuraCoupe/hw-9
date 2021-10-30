@@ -39,7 +39,7 @@ public class ValidNumberClass {
     }
 
     private static boolean numberValidator(String number) {
-        String regex = "\\(\\d\\d\\d\\) \\d\\d\\d-\\d\\d\\d\\d|\\d\\d\\d-\\d\\d\\d-\\d\\d\\d\\d";
+        String regex = "\\(\\d{3}\\) \\d{3}-\\d{4}|\\d{3}-\\d{3}-\\d{4}";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(number);
         if (matcher.matches()) {
