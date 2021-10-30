@@ -10,7 +10,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ValidNumberClass {
-    private static File file = new File("E:\\GoIt\\Java Core 4\\HW9\\src\\main\\resources\\file.txt");
+    private static File file = new File("src/main/resources/file.txt");
     private static List<String> numbers = new ArrayList<>();
 
 

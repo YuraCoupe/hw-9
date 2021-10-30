@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class JsonFileMaker {
-    private static File inputFile = new File("E:\\GoIt\\Java Core 4\\HW9\\src\\main\\resources\\file2.txt");
-    private static File resultFile = new File("E:\\GoIt\\Java Core 4\\HW9\\src\\main\\resources\\user.json");
+    private static File inputFile = new File("src/main/resources/file2.txt");
+    private static File resultFile = new File("src/main/resources/user.json");
 
 
     public static void main(String[] args) {

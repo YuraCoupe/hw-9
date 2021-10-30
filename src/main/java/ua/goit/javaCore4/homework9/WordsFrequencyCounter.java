@@ -8,7 +8,7 @@ import java.util.*;
 import java.util.Map.Entry;
 
 public class WordsFrequencyCounter {
-    private static File inputFile = new File("E:\\GoIt\\Java Core 4\\HW9\\src\\main\\resources\\words.txt");
+    private static File inputFile = new File("src/main/resources/words.txt");
 
     public static void main(String[] args) {
         List<String> words = fileToString(inputFile);
